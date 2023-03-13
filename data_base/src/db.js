@@ -1,5 +1,4 @@
 const { Sequelize } = require("sequelize");
-const sequelize = require("sequelize");
 
 const dbSequelize = new Sequelize("banco-deputados", "root", "mysql", {
   dialect: "mysql",
