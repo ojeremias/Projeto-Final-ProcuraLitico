@@ -1,0 +1,157 @@
+*{
+   box-sizing: border-box; /*vai tirar todas as bordas pq alguns elementos ja possue borda*/
+   padding: 0;
+   margin: 0;
+}
+
+body{
+   width: 970px;
+   height: 970px;
+   background-color:#eee;
+}
+
+button{
+   
+}
+.butao{
+   color: rgb(178, 110, 27);
+   width: 51px;
+}
+.clh{
+   position: absolute;
+   width: 1074px;
+   height: 40px;
+   left: 900px;
+   top: 35px;
+   
+}
+
+#CC{
+   align-items: center;
+   color: #080000;
+   display: flex;
+   font-family: 'Inter';
+   font-style:normal;
+   font-weight: 400;
+   font-size: 33px;
+   height: 40px;
+   left: 281px;
+   line-height: 40px;
+   position: absolute;
+   top: 35px;
+   width: 205px;
+   
+}
+
+#dds{
+   text-align: center ;
+}
+
+
+#incone{
+   width: 300px;
+   top: 187px;
+}
+
+#logo{
+   color: rgb(16, 195, 16);
+   border-bottom: 0px;
+   border-top: 0px;
+   padding: 0px;
+   width: 651px;
+}
+
+#L{
+   align-items: center;
+   color: #080000;
+   display: flex;
+   font-family: 'Inter';
+   font-style:normal;
+   font-weight: 400;
+   font-size: 33px;
+   height: 40px;
+   left: 500px;
+   line-height: 40px;
+   position: absolute;
+   top: 35px;
+   width: 205px;
+   
+}
+li{
+  list-style-type: none; 
+}
+
+#H{
+   align-items: center;
+   color: #080000;
+   display: flex;
+   font-family: 'Inter';
+   font-style:normal;
+   font-weight: 400;
+   font-size: 33px;
+   height: 40px;
+   left: 600px;
+   line-height: 40px;
+   position: absolute;
+   top: 35px;
+   width: 205px;
+   
+}
+#PesquisarPolitico{
+   border: none;
+   border-bottom: 0px;
+   border-top: 0px;
+width: 600px;
+height: 26px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+#s{
+ 
+position: absolute;
+width: 1074px;
+height: 40px;
+left: 184px;
+top: 35px;
+  
+}
+
+
+.s{ 
+    display: flex;
+    flex-direction: column;
+     gap: 10px;
+      /* justify-content: center;
+     justify-self: center; */
+ 
+ }
+
+ #name{
+   text-transform: uppercase;
+     text-align: center;
+} 
+
+.Noticias{
+
+   height: 174px;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+}
+.Corrupcoes{
+  height: 2px;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+}
+.Economia{
+   height: 374px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+ img{
+  
+ }
