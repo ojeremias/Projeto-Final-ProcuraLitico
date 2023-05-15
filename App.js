@@ -10,8 +10,8 @@ import {
 import { useFonts } from 'expo-font';
 
 function TelaLoginComponent({ navigation }) {
-  const [isEmail, setIsEmail] = useState(true);
-  const [isSenha, setIsSenha] = useState(true);
+  const [Email, setIsEmail] = useState('');
+  const [Senha, setIsSenha] = useState('');
 
   //const [loaded] = useFonts({
   //  SecularOne: require('./assets/fonte/SecularOne-Regular.ttf'),
@@ -33,7 +33,7 @@ function TelaLoginComponent({ navigation }) {
             style={estilos.textInput}
             placeholder=""
             onChangeText={(texto) => setIsEmail(texto)}
-            defaultValue={isEmail}
+            defaultValue={Email}
           />
 
           <Text style={estilos.texto}>Senha</Text>
@@ -41,7 +41,7 @@ function TelaLoginComponent({ navigation }) {
             style={estilos.textInput}
             placeholder=""
             onChangeText={(texto) => setIsSenha(texto)}
-            defaultValue={isSenha}
+            defaultValue={Senha}
           />
           <View style={estilos.criarEsqueci}>
             <TouchableOpacity onPress={() => navigation.navigate('')}>
@@ -63,48 +63,9 @@ function TelaLoginComponent({ navigation }) {
       </View>
     </View>
   );
-}<View style={estilos.login}>
-      <View style={estilos.logo}>
-        <Text style={estilos.logo}>ProcuraLitico</Text>
-      </View>
+}
+    
 
-      <View style={estilos.login}>
-        <View style={estilos.input}>
-          <Text style={estilos.texto}>Email</Text>
-
-          <TextInput
-            style={estilos.textInput}
-            placeholder=""
-            onChangeText={(texto) => setEmail(texto)}
-            defaultValue={email}
-          />
-
-          <Text style={estilos.texto}>Senha</Text>
-          <TextInput
-            style={estilos.textInput}
-            placeholder=""
-            onChangeText={(texto) => setSenha(texto)}
-            defaultValue={senha}
-          />
-          <View style={estilos.criarEsqueci}>
-            <TouchableOpacity onPress={() => navigation.navigate('')}>
-              <Text>esqueci senha</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              onPress={() => navigation.navigate('criar conta')}>
-              <Text> criar conta</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-
-        <TouchableOpacity
-          style={estilos.butaoBorda}
-          onPress={() => navigation.navigate('')}>
-          <Text style={estilos.butao}>Iniciar Sessão</Text>
-        </TouchableOpacity>
-      </View>
-    </View>
 
 const estilos = StyleSheet.create({
   login: {

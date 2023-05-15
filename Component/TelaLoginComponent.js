@@ -2,7 +2,7 @@ import { useState } from "react";
 import { View,TextInput,Text ,StyleSheet} from "react-native";
 import { Button } from "react-native-paper";
 
-const TelaLoginComponent =()=>{
+function TelaLoginComponent({navigation}) {
     const[email,setEmail] = useState('')
     
     return(
